@@ -67,9 +67,9 @@ public class JBGZ {
                 .flatMapConcat((Function<String, Source<煎饼果子, NotUsed>>) (String req) -> {
                     System.out.println("你有新的订单:" + req);
                     List<Source<食材, ?>> sources = new ArrayList<>();
-                    sources.add(鸡蛋煎饼Source.map(r -> (食材) r).async());
-                    sources.add(生菜Source.map(r -> (食材) r).async());
-                    sources.add(火腿肠Source.map(r -> (食材) r).async());
+                    sources.add(鸡蛋煎饼Source.map(食材.class::cast).async());
+                    sources.add(生菜Source.map(食材.class::cast).async());
+                    sources.add(火腿肠Source.map(食材.class::cast).async());
 //                    sources.add(鸡蛋煎饼Source.map(r -> (食材) r));
 //                    sources.add(生菜Source.map(r -> (食材) r));
 //                    sources.add(火腿肠Source.map(r -> (食材) r));
