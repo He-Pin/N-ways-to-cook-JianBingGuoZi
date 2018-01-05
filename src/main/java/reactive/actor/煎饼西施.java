@@ -5,7 +5,7 @@ import reactive.shared.煎饼;
 import reactive.shared.煎饼工厂;
 
 /**
- * 虎鸣 ,hepin.p@alibaba-inc.com
+ * kerr
  **/
 public class 煎饼西施 extends AbstractActor {
     @Override

@@ -3,7 +3,7 @@ package reactive.sequential;
 import reactive.shared.*;
 
 /**
- * 虎鸣 ,hepin.p@alibaba-inc.com
+ * kerr
  **/
 public class JBGZ {
     public static void main(String[] args) {

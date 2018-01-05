@@ -5,7 +5,7 @@ import reactive.shared.火腿肠;
 import reactive.shared.火腿肠工厂;
 
 /**
- * 虎鸣 ,hepin.p@alibaba-inc.com
+ * kerr
  **/
 public class 火腿肠大叔 extends AbstractActor {
     @Override

@@ -7,7 +7,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * 虎鸣 ,hepin.p@alibaba-inc.com
+ * kerr
  **/
 public class JBGZ {
     private static ExecutorService executorService = Executors.newFixedThreadPool(4);

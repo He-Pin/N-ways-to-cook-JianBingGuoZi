@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 import java.util.concurrent.TimeoutException;
 
 /**
- * 虎鸣 ,hepin.p@alibaba-inc.com
+ * kerr
  **/
 public class JBGZ {
     private static final ActorSystem ACTOR_SYSTEM = ActorSystem.apply();

@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 import static akka.pattern.PatternsCS.ask;
 
 /**
- * 虎鸣 ,hepin.p@alibaba-inc.com
+ * kerr
  **/
 public class 门店 {
     private final ActorRef 老板Ref;

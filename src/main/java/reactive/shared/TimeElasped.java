@@ -1,7 +1,7 @@
 package reactive.shared;
 
 /**
- * 虎鸣 ,hepin.p@alibaba-inc.com
+ * kerr
  **/
 public class TimeElasped {
     public static final void run(Action action)  {

@@ -1,7 +1,7 @@
 package reactive.shared;
 
 /**
- * 虎鸣 ,hepin.p@alibaba-inc.com
+ * kerr
  **/
 public class 鸡蛋工厂 {
     public static 鸡蛋煎饼 鸡蛋打在煎饼上(煎饼 煎饼一张){

@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 import static akka.pattern.PatternsCS.ask;
 
 /**
- * 虎鸣 ,hepin.p@alibaba-inc.com
+ * kerr
  **/
 public class 煎饼果子大侠 extends AbstractActor {
     private final ActorRef 鸡蛋煎饼太郎Ref;

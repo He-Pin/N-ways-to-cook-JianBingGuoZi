@@ -1,7 +1,7 @@
 package reactive.shared;
 
 /**
- * 虎鸣 ,hepin.p@alibaba-inc.com
+ * kerr
  **/
 public class 火腿肠工厂 {
     public static 火腿肠 撕火腿肠(){

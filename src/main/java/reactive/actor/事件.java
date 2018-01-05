@@ -3,7 +3,7 @@ package reactive.actor;
 import reactive.shared.*;
 
 /**
- * 虎鸣 ,hepin.p@alibaba-inc.com
+ * kerr
  **/
 public interface 事件 {
     public static class 煎饼做好了 implements 事件{

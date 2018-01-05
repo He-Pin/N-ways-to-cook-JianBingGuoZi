@@ -5,7 +5,7 @@ import reactive.shared.生菜;
 import reactive.shared.生菜工厂;
 
 /**
- * 虎鸣 ,hepin.p@alibaba-inc.com
+ * kerr
  **/
 public class 生菜小二哥 extends AbstractActor {
     @Override

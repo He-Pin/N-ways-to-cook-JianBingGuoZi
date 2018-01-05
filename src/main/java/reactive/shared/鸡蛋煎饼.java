@@ -1,7 +1,7 @@
 package reactive.shared;
 
 /**
- * 虎鸣 ,hepin.p@alibaba-inc.com
+ * kerr
  **/
 public class 鸡蛋煎饼 {
     private final 鸡蛋 鸡蛋一个;

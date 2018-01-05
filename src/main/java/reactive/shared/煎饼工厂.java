@@ -1,7 +1,7 @@
 package reactive.shared;
 
 /**
- * 虎鸣 ,hepin.p@alibaba-inc.com
+ * kerr
  **/
 public class 煎饼工厂 {
     public static 煎饼 做煎饼(){

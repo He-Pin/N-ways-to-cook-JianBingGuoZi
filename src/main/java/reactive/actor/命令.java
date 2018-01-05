@@ -3,7 +3,7 @@ package reactive.actor;
 import reactive.shared.煎饼;
 
 /**
- * 虎鸣 ,hepin.p@alibaba-inc.com
+ * kerr
  **/
 public interface 命令 {
     public static class 做煎饼 implements 命令{}
