@@ -3,8 +3,7 @@ package reactive.akkastream;
 import akka.NotUsed;
 import akka.actor.ActorSystem;
 import akka.japi.function.Function;
-import akka.stream.*;
-import akka.stream.javadsl.Flow;
+import akka.stream.ActorMaterializer;
 import akka.stream.javadsl.Sink;
 import akka.stream.javadsl.Source;
 import reactive.shared.*;
@@ -32,7 +31,7 @@ public class JBGZ {
 
             @Override
             public int size() {
-                return 100;
+                return 1;
             }
         });
         Source<鸡蛋煎饼,NotUsed> 鸡蛋煎饼Source = 煎饼Source
@@ -49,7 +48,7 @@ public class JBGZ {
 
             @Override
             public int size() {
-                return 100;
+                return 1;
             }
         });
         Source<火腿肠,NotUsed> 火腿肠Source = Source.from(new AbstractList<火腿肠>() {
@@ -61,11 +60,10 @@ public class JBGZ {
 
             @Override
             public int size() {
-                return 100;
+                return 1;
             }
         });
         Source<煎饼果子,NotUsed> 煎饼果子Source = reqSource
-                .withAttributes(Attributes.inputBuffer(0,0))
                 .flatMapConcat((Function<String, Source<煎饼果子, NotUsed>>) (String req) -> {
             System.out.println("你有新的订单:"+req);
             List<Source<食材,?>> sources = new ArrayList<>();
@@ -89,6 +87,7 @@ public class JBGZ {
                             .runWith(Sink.head(),actorMaterializer)
                     .toCompletableFuture();
             System.out.println(煎饼果子CompletableFuture.join());
+            actorMaterializer.shutdown();
             ACTOR_SYSTEM.terminate();
         });
 
