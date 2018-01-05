@@ -44,7 +44,8 @@ public class 煎饼果子大侠 extends AbstractActor {
         CompletableFuture<鸡蛋煎饼> 鸡蛋煎饼Future =
                 ask(鸡蛋煎饼太郎Ref, new 命令.做鸡蛋煎饼(), 最多等你半分钟)
                         .toCompletableFuture()
-                        .thenApply(r -> ((事件.鸡蛋煎饼做好了) r).get鸡蛋煎饼一张());
+                        .thenApply(事件.鸡蛋煎饼做好了.class::cast)
+                        .thenApply(事件.鸡蛋煎饼做好了::get鸡蛋煎饼一张);
 
         CompletableFuture<生菜> 生菜若干Future =
                 ask(生菜小二哥Ref, new 命令.切生菜(), 最多等你半分钟)
