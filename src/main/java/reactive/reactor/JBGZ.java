@@ -73,9 +73,9 @@ public class JBGZ {
 //            fluxs.add(生菜Flux.cast(食材.class));
 //            fluxs.add(火腿肠Flux.cast(食材.class));
 
-            fluxs.add(鸡蛋煎饼Flux.cast(食材.class).publishOn(SCHEDULER));
-            fluxs.add(生菜Flux.cast(食材.class).publishOn(SCHEDULER));
-            fluxs.add(火腿肠Flux.cast(食材.class).publishOn(SCHEDULER));
+            fluxs.add(鸡蛋煎饼Flux.cast(食材.class).subscribeOn(SCHEDULER));
+            fluxs.add(生菜Flux.cast(食材.class).subscribeOn(SCHEDULER));
+            fluxs.add(火腿肠Flux.cast(食材.class).subscribeOn(SCHEDULER));
             return Flux.zip(fluxs, 1, (Function<Object[], 煎饼果子>) 食材List -> {
                 鸡蛋煎饼 鸡蛋煎饼一张 = (鸡蛋煎饼) 食材List[0];
                 生菜 生菜若干 = (生菜) 食材List[1];
