@@ -25,6 +25,6 @@ public class 门店 {
 
         return ask(老板Ref, new 命令.煎饼果子来一个(), 最多等你两分钟)
                 .toCompletableFuture()
-                .thenApply(r -> (煎饼果子) r);
+                .thenApply(煎饼果子.class::cast);
     }
 }
