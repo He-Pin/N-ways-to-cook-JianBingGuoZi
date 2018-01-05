@@ -73,7 +73,7 @@ public class JBGZ {
 //                    sources.add(鸡蛋煎饼Source.map(r -> (食材) r));
 //                    sources.add(生菜Source.map(r -> (食材) r));
 //                    sources.add(火腿肠Source.map(r -> (食材) r));
-                    return Source.<食材, 煎饼果子>zipWithN((Function<List<食材>, 煎饼果子>) 食材List -> {
+                    return Source.zipWithN((Function<List<食材>, 煎饼果子>) 食材List -> {
                         鸡蛋煎饼 鸡蛋煎饼一张 = (鸡蛋煎饼) 食材List.get(0);
                         生菜 生菜若干 = (生菜) 食材List.get(1);
                         火腿肠 火腿肠一根 = (火腿肠) 食材List.get(2);

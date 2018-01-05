@@ -70,13 +70,13 @@ public class JBGZ {
             System.out.println(req);
             List<Flux<食材>> fluxs = new ArrayList<>();
 
-            fluxs.add(鸡蛋煎饼Flux.cast(食材.class).subscribeOn(SCHEDULER));
-            fluxs.add(生菜Flux.cast(食材.class).subscribeOn(SCHEDULER));
-            fluxs.add(火腿肠Flux.cast(食材.class).subscribeOn(SCHEDULER));
+//            fluxs.add(鸡蛋煎饼Flux.cast(食材.class).subscribeOn(SCHEDULER));
+//            fluxs.add(生菜Flux.cast(食材.class).subscribeOn(SCHEDULER));
+//            fluxs.add(火腿肠Flux.cast(食材.class).subscribeOn(SCHEDULER));
 
-//            fluxs.add(鸡蛋煎饼Flux.cast(食材.class));
-//            fluxs.add(生菜Flux.cast(食材.class));
-//            fluxs.add(火腿肠Flux.cast(食材.class));
+            fluxs.add(鸡蛋煎饼Flux.cast(食材.class));
+            fluxs.add(生菜Flux.cast(食材.class));
+            fluxs.add(火腿肠Flux.cast(食材.class));
 
             return Flux.zip(fluxs, 1, 食材List -> {
                 鸡蛋煎饼 鸡蛋煎饼一张 = (鸡蛋煎饼) 食材List[0];
