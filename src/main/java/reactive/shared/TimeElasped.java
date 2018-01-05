@@ -4,7 +4,7 @@ package reactive.shared;
  * kerr
  **/
 public class TimeElasped {
-    public static final void run(Action action)  {
+    public static final void run(Action action) {
         System.out.println("开始计时");
         long start = System.currentTimeMillis();
         try {
@@ -13,6 +13,6 @@ public class TimeElasped {
             throwable.printStackTrace();
         }
         long end = System.currentTimeMillis();
-        System.out.println("耗时:" + ((end -start) / 1000) + " 秒");
+        System.out.println("耗时:" + ((end - start) / 1000) + " 秒");
     }
 }

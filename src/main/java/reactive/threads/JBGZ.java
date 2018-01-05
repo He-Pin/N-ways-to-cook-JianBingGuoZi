@@ -13,12 +13,12 @@ import java.util.concurrent.Future;
 public class JBGZ {
     private static ExecutorService executorService = Executors.newFixedThreadPool(4);
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         TimeElasped.run(() -> {
             Future<煎饼> 煎饼一张Future = executorService.submit(煎饼工厂::做煎饼);
             Future<鸡蛋煎饼> 鸡蛋煎饼一张Future = executorService.submit(() -> {
                 try {
-                    煎饼  煎饼一张 = 煎饼一张Future.get();
+                    煎饼 煎饼一张 = 煎饼一张Future.get();
                     return 鸡蛋工厂.鸡蛋打在煎饼上(煎饼一张);
                 } catch (InterruptedException | ExecutionException e) {
                     e.printStackTrace();

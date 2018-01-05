@@ -18,7 +18,7 @@ public class JBGZ {
 
     public static void main(String[] args) throws TimeoutException, InterruptedException {
         门店 煎饼果子专营店 = new 门店(
-                ACTOR_SYSTEM.actorOf(Props.create(老板.class),"manager")
+                ACTOR_SYSTEM.actorOf(Props.create(老板.class), "manager")
         );
         TimeElasped.run(() -> {
             煎饼果子 西施煎饼果子 = 煎饼果子专营店

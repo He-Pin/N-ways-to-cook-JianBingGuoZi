@@ -4,8 +4,8 @@ package reactive.shared;
  * kerr
  **/
 public class 煎饼果子 {
-    private  final 鸡蛋煎饼 鸡蛋煎饼一张;
-    private  final 生菜 生菜若干;
+    private final 鸡蛋煎饼 鸡蛋煎饼一张;
+    private final 生菜 生菜若干;
     private final 火腿肠 火腿肠一根;
 
     public 煎饼果子(鸡蛋煎饼 鸡蛋煎饼一张, 生菜 生菜若干, 火腿肠 火腿肠一根) {
