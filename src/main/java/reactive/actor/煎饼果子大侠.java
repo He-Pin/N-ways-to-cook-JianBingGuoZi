@@ -19,7 +19,9 @@ public class 煎饼果子大侠 extends AbstractActor {
     private final ActorRef 生菜小二哥Ref;
     private final ActorRef 火腿肠大叔Ref;
 
-    public 煎饼果子大侠(ActorRef 鸡蛋煎饼太郎Ref, ActorRef 生菜小二哥Ref, ActorRef 火腿肠大叔Ref) {
+    public 煎饼果子大侠(ActorRef 鸡蛋煎饼太郎Ref,
+                  ActorRef 生菜小二哥Ref,
+                  ActorRef 火腿肠大叔Ref) {
         this.鸡蛋煎饼太郎Ref = 鸡蛋煎饼太郎Ref;
         this.生菜小二哥Ref = 生菜小二哥Ref;
         this.火腿肠大叔Ref = 火腿肠大叔Ref;

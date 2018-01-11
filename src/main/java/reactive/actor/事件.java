@@ -5,7 +5,7 @@ import reactive.shared.*;
 /**
  * kerr
  **/
-public interface 事件 {
+public interface 事件 extends 消息{
     public static class 煎饼做好了 implements 事件 {
         private final 煎饼 煎饼一张;
 

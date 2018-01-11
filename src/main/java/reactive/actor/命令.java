@@ -5,7 +5,7 @@ import reactive.shared.煎饼;
 /**
  * kerr
  **/
-public interface 命令 {
+public interface 命令 extends 消息{
     public static class 做煎饼 implements 命令 {
     }
 
